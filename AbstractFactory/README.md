@@ -1,2 +1,0 @@
-Nadja Tarassova
-Geekbrains
