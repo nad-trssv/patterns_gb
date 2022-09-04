@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Lesson7;
+namespace App\Lesson8;
 
 use ArrayIterator;
 use ArrayObject;
