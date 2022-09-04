@@ -3,7 +3,7 @@
 // use App\Strategy\Handlers\SortHandler;
 // use App\Strategy\Enum\PaymentType;
 
-use App\Lesson7\Homework;
+use App\Lesson8\Homework;
 
 require __DIR__.'/../vendor/autoload.php';
 
