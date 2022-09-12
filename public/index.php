@@ -3,6 +3,7 @@
 // use App\Strategy\Handlers\SortHandler;
 // use App\Strategy\Enum\PaymentType;
 
+use App\Lesson10\FibonacciWitthRecursive;
 use App\Lesson8\Homework;
 use App\Lesson9\BubbleSort;
 use App\Lesson9\Heapify;
@@ -31,39 +32,42 @@ require __DIR__.'/../vendor/autoload.php';
 
 
 /* ========= Homework 9 ========== */
-$randomArray = new RandomArray();
-$bubbleSort = new BubbleSort();
-$shakerSort = new ShakerSort();
-$quickSort = new QuickSort();
+// $randomArray = new RandomArray();
+// $bubbleSort = new BubbleSort();
+// $shakerSort = new ShakerSort();
+// $quickSort = new QuickSort();
 
-$bubbleSort->sort($randomArray->create());
-$shakerSort->sort($randomArray->create());
-$quickSort->sort($randomArray->create());
+// $bubbleSort->sort($randomArray->create());
+// $shakerSort->sort($randomArray->create());
+// $quickSort->sort($randomArray->create());
 
-$bubbleTimeout = $bubbleSort->getTimout();
-$shakerTimeout = $shakerSort->getTimout();
-$quickTimeout = $quickSort->getTimout();
+// $bubbleTimeout = $bubbleSort->getTimout();
+// $shakerTimeout = $shakerSort->getTimout();
+// $quickTimeout = $quickSort->getTimout();
 
-print_r('Bubble Sort Timeout: ' . $bubbleTimeout . PHP_EOL);
-print_r('Shaker Sort Timeout: ' . $shakerTimeout . PHP_EOL);
-print_r('Quick Sort Timeout: ' . $quickTimeout . PHP_EOL);
+// print_r('Bubble Sort Timeout: ' . $bubbleTimeout . PHP_EOL);
+// print_r('Shaker Sort Timeout: ' . $shakerTimeout . PHP_EOL);
+// print_r('Quick Sort Timeout: ' . $quickTimeout . PHP_EOL);
 
-$timeoutArr = [
-    [
-        'сортировка пузырьком',
-        $bubbleTimeout
-    ], 
-    [
-        'Шейкерная сортировка',
-        $shakerTimeout
-    ], 
-    [
-        'Быстрая сортировка',
-        $quickTimeout
-    ], 
-];
-print_r('Быстрее всего сработал метод: ' . $quickSort->sort($timeoutArr)[0][0]. ' :) ');
+// $timeoutArr = [
+//     [
+//         'сортировка пузырьком',
+//         $bubbleTimeout
+//     ], 
+//     [
+//         'Шейкерная сортировка',
+//         $shakerTimeout
+//     ], 
+//     [
+//         'Быстрая сортировка',
+//         $quickTimeout
+//     ], 
+// ];
+// print_r('Быстрее всего сработал метод: ' . $quickSort->sort($timeoutArr)[0][0]. ' :) ');
 
-
+// LESSON 10
+$fib = new FibonacciWitthRecursive();
+var_dump($fib->getFibonacci(10));
+var_dump($fib->getFibonacciFast(100));
 
 
